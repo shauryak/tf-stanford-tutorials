@@ -20,10 +20,13 @@ n_samples = sheet.nrows - 1
 
 # Step 2: create placeholders for input X (number of fire) and label Y (number of theft)
 
+tf.placeholder(dtype,shape=None,name=None)
+
 
 # Step 3: create weight and bias, initialized to 0
 # name your variables w and b
-
+tf.Variable(initial_value=None, trainable=True, collections=None,
+name=None, dtype=None, ...)
 
 # Step 4: predict Y (number of theft) from the number of fire
 # name your variable Y_predicted
